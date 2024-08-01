@@ -1,95 +1,99 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 
-export default function Home() {
+import React from 'react';
+import Head from 'next/head';
+import './page.css';
+
+const Page = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
+    <div >
+      <div className='page1'>
+        <div className="logo">
+          Xfive
+        </div>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <div className="page-content">
+            <div className="centered-text">
+              <h1>Digital Solutions That Make a Difference</h1>
+            </div>
+            <div className="links">
+              <a href="/case-studies" target="_blank" rel="noopener noreferrer">Case Studies</a>
+              <a href="/services" target="_blank" rel="noopener noreferrer">Services</a>
+              <a href="/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className='page2'>
+        <div className="logo-container">
+          Xfive
+        </div>
       </div>
+      <div className='page3'>
+        <div className="image-grid">
+          <div className="image-item">
+            <div className="overlay-text">Sophisticated booking for luxury cruises</div>
+            <img src="https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Cruises" />
+          </div>
+          <div className="image-item">
+            <div className="overlay-text">Complex Shopify gift store design & dev</div>
+            <img src="https://images.pexels.com/photos/17435380/pexels-photo-17435380/free-photo-of-box-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shopify Gift" />
+          </div>
+        </div>
+        <div className="image-grid">
+          <div className="image-item1">
+            <div className="overlay-text">Van accessories storefront </div>
+            <img src="https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Cruises" />
+          </div>
+          <div className="image-item1">
+            <div className="overlay-text">Ruby on Rails for an elder care startup</div>
+            <img src="https://images.pexels.com/photos/601170/pexels-photo-601170.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Shopify Gift" />
+          </div>
+        </div>
+       </div>
+      
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+      <div className='page4'>
+        <div className="review-content">
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Their designs are exceptional and their<br />
+            communication is great. They also do<br />
+            things in a timely manner, which is<br />
+            amazing.
           </p>
-        </a>
+          <div className="review-link">Clutch Review</div>
+        </div>
+        
+        <div className="review-image">
+          <img src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Review Image" />
+          <div className="imagecontent">
+            <div className="imagename">Ingrid Getzan</div>
+            <div className="imagenamedesc">Van Cafe</div>
+          </div>
+        </div>
       </div>
-    </main>
+      <div className='page5'>
+      <div className="logo-section">
+          <img src="https://via.placeholder.com/100x50.png?text=YANMAR" alt="YANMAR" />
+          <img src="https://via.placeholder.com/100x50.png?text=OECD" alt="OECD" />
+          <img src="https://via.placeholder.com/100x50.png?text=Universiteit+Leiden" alt="Universiteit Leiden" />
+          <img src="https://via.placeholder.com/100x50.png?text=Olera" alt="Olera" />
+          <img src="https://via.placeholder.com/100x50.png?text=Van+Cafe" alt="Van Cafe" />
+          <img src="https://via.placeholder.com/100x50.png?text=SmartRecruiters" alt="SmartRecruiters" />
+          <img src="https://via.placeholder.com/100x50.png?text=BigCommerce" alt="BigCommerce" />
+          <img src="https://via.placeholder.com/100x50.png?text=Shopify" alt="Shopify" />
+          <img src="https://via.placeholder.com/100x50.png?text=SoDA" alt="SoDA" />
+          <img src="https://via.placeholder.com/100x50.png?text=Rare+Assembly" alt="Rare Assembly" />
+        </div>
+      </div>
+      <div className='page6'>
+      
+      </div>
+    </div>
   );
 }
+
+export default Page;
+
+
+
